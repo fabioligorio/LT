@@ -11,6 +11,23 @@
 body{margin:0}
 a{text-decoration:none}
 a:hover{opacity:0.88}
+img{max-width:100%}
+@media (max-width: 720px){
+nav a:not([href*="wa.me"]){display:none !important}
+nav{width:auto !important}
+nav a[href*="wa.me"]{padding:10px 14px !important;font-size:14px !important}
+[style*="padding: 88px 24px"]{padding-top:56px !important;padding-bottom:56px !important}
+[style*="padding: 56px 24px 96px"]{padding-top:32px !important;padding-bottom:48px !important;gap:32px !important}
+[style*="padding: 20px 24px"]{padding-top:14px !important;padding-bottom:14px !important}
+.hero-cta a{flex:1 1 100% !important;justify-content:center !important}
+[style*="flex: 1 1 320px; background: #FFFFFF"]{display:grid !important;grid-template-columns:52px 1fr;column-gap:16px !important;row-gap:4px !important;padding:20px !important;align-items:start}
+[style*="flex: 1 1 320px; background: #FFFFFF"]>div:first-child{grid-row:1 / 3}
+[style*="flex: 1 1 320px; background: #FFFFFF"]>h3{align-self:center;font-size:19px !important}
+.cta-form{padding:22px !important}
+}
+@media (max-width: 480px){
+.hero-art{max-width:300px !important}
+}
 </style>
 
 <style>html{scroll-behavior:smooth}</style>
@@ -42,17 +59,17 @@ a:hover{opacity:0.88}
 
 <div style="background: #0B0F0D">
 <div style="max-width: 1120px; margin: 0 auto; padding: 56px 24px 96px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
-<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 28px">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #14E07A">Atendimento 24 horas · Curitiba e região</div>
 <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(38px, 5.4vw, 68px); line-height: 1.02; letter-spacing: -0.04em; color: #FFFFFF">Rede, câmeras e automação que simplesmente <span style="color: #14E07A">funcionam.</span></h1>
 <p style="margin: 0; font-size: 20px; line-height: 1.55; color: #C9D3CD; max-width: 520px">Projeto, instalação e suporte de infraestrutura de tecnologia e elétrica para casas e empresas.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<div class="hero-cta" style="display: flex; flex-wrap: wrap; gap: 14px">
 <a href="https://wa.me/5541936186432?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20com%20a%20LigorioTec." target="_blank" rel="noopener" style="background: #14E07A; color: #0B0F0D; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 12px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Pedir orçamento</a>
-<a href="#loja" style="color: #FFFFFF; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 12px; border: 2px solid #5A6660; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Ver cursos</a>
+<a href="#servicos" style="color: #FFFFFF; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 12px; border: 2px solid #5A6660; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Conhecer os serviços</a>
 </div>
 </div>
-<div style="flex: 1 1 360px; display: flex; justify-content: center">
-<svg viewBox="0 0 480 400" width="100%" style="max-width: 480px" aria-hidden="true">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+<svg class="hero-art" viewBox="0 0 480 400" width="100%" style="max-width: 480px" aria-hidden="true">
 <g fill="none" stroke="#14E07A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
 <path d="M200 190H150L110 150V96"/>
 <path d="M280 190H330L370 150V96"/>
@@ -137,6 +154,14 @@ a:hover{opacity:0.88}
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #5A6660">Instalações elétricas seguras, organizadas e preparadas para a tecnologia.</p>
 </div>
 
+<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #D5DDD8; border-radius: 16px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 52px; height: 52px; border-radius: 12px; background: #14E07A; display: flex; align-items: center; justify-content: center">
+<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0B0F0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.02em">Suporte técnico</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #5A6660">Manutenção, ajustes e atendimento depois da instalação, 24 horas.</p>
+</div>
+
 </div>
 </div>
 </div>
@@ -173,35 +198,21 @@ a:hover{opacity:0.88}
 </div>
 
 <div id="projetos" style="background: #0B0F0D">
-<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #14E07A">Projetos</div>
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF">O trabalho aparece no acabamento.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9D3CD">Obras reais, com antes e depois. Substitua os espaços abaixo pelas suas fotos.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9D3CD">Cada instalação sai organizada, testada e registrada. Este é o padrão que eu entrego em um rack de rede.</p>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px; font-size: 17px; line-height: 1.4; color: #FFFFFF; font-weight: 500"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#14E07A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><span>Cabos identificados e bem acomodados</span></div>
+<div style="display: flex; align-items: center; gap: 12px; font-size: 17px; line-height: 1.4; color: #FFFFFF; font-weight: 500"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#14E07A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><span>Portas e equipamentos documentados</span></div>
+<div style="display: flex; align-items: center; gap: 12px; font-size: 17px; line-height: 1.4; color: #FFFFFF; font-weight: 500"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#14E07A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><span>Nobreak e backup para a rede não parar</span></div>
+<div style="display: flex; align-items: center; gap: 12px; font-size: 17px; line-height: 1.4; color: #FFFFFF; font-weight: 500"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#14E07A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><span>Câmeras gravando e acessíveis pelo celular</span></div>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px">
-<div style="height: 240px; border-radius: 16px; background: #17201B; border: 2px dashed #3C4A42; display: flex; align-items: center; justify-content: center; color: #9AA7A0; font-size: 15px">[FOTO DA OBRA]</div>
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #14E07A">Antes e depois</div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #FFFFFF">[Nome do projeto]</div>
-<div style="font-size: 15px; color: #9AA7A0">[Tipo de cliente] · [Serviços executados]</div>
+<div style="font-size: 14px; color: #9AA7A0">Imagem ilustrativa. Em breve, fotos de obras reais.</div>
 </div>
-
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px">
-<div style="height: 240px; border-radius: 16px; background: #17201B; border: 2px dashed #3C4A42; display: flex; align-items: center; justify-content: center; color: #9AA7A0; font-size: 15px">[FOTO DA OBRA]</div>
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #14E07A">Antes e depois</div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #FFFFFF">[Nome do projeto]</div>
-<div style="font-size: 15px; color: #9AA7A0">[Tipo de cliente] · [Serviços executados]</div>
-</div>
-
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px">
-<div style="height: 240px; border-radius: 16px; background: #17201B; border: 2px dashed #3C4A42; display: flex; align-items: center; justify-content: center; color: #9AA7A0; font-size: 15px">[FOTO DA OBRA]</div>
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #14E07A">Antes e depois</div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #FFFFFF">[Nome do projeto]</div>
-<div style="font-size: 15px; color: #9AA7A0">[Tipo de cliente] · [Serviços executados]</div>
-</div>
-
+<div style="flex: 1 1 320px; min-width: 0; display: flex; justify-content: center">
+<img src="rack-organizado.jpg" alt="Ilustração de um rack de rede organizado, com patch panels, switches, NVR, servidor e nobreak" style="width: 100%; max-width: 400px; height: auto; border-radius: 20px; border: 1px solid #25302A; display: block">
 </div>
 </div>
 </div>
@@ -263,22 +274,22 @@ a:hover{opacity:0.88}
 
 <div id="orcamento" style="background: #14E07A">
 <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
-<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 20px">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(34px, 4.6vw, 56px); line-height: 1.02; letter-spacing: -0.04em; color: #0B0F0D">Vamos conectar o seu projeto?</h2>
 <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #0B0F0D; max-width: 460px">Conte o que você precisa e eu respondo com os próximos passos. Se preferir, chame direto no WhatsApp: <a href="https://wa.me/5541936186432?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20com%20a%20LigorioTec." target="_blank" rel="noopener" style="color: #0B0F0D; font-weight: 600; text-decoration: underline">(41) 93618-6432</a>.</p>
 </div>
-<form onsubmit="event.preventDefault();var f=this;var t='Olá! Meu nome é '+f.nome.value+'. Preciso de: '+f.servico.value+'. Meu WhatsApp: '+f.whatsapp.value+'.';window.open('https://wa.me/5541936186432?text='+encodeURIComponent(t),'_blank');" style="flex: 1 1 360px; background: #FFFFFF; border-radius: 16px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 18px">
+<form class="cta-form" onsubmit="event.preventDefault();var f=this;var t='Olá! Meu nome é '+f.nome.value+'. Preciso de: '+f.servico.value+'. Meu WhatsApp: '+f.whatsapp.value+'.';window.open('https://wa.me/5541936186432?text='+encodeURIComponent(t),'_blank');" style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 16px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="nome" style="font-size: 15px; font-weight: 600">Nome</label>
-<input id="nome" name="nome" type="text" required autocomplete="name" style="height: 48px; box-sizing: border-box; border: 1px solid #5A6660; border-radius: 10px; padding: 0 14px; font-family: 'Inter', sans-serif; font-size: 16px">
+<input id="nome" name="nome"  type="text" required autocomplete="name" style="width: 100%; height: 48px; box-sizing: border-box; border: 1px solid #5A6660; border-radius: 10px; padding: 0 14px; font-family: 'Inter', sans-serif; font-size: 16px">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="whatsapp" style="font-size: 15px; font-weight: 600">WhatsApp</label>
-<input id="whatsapp" name="whatsapp" type="tel" required autocomplete="tel" placeholder="(41) 90000-0000" style="height: 48px; box-sizing: border-box; border: 1px solid #5A6660; border-radius: 10px; padding: 0 14px; font-family: 'Inter', sans-serif; font-size: 16px">
+<input id="whatsapp" name="whatsapp"  type="tel" required autocomplete="tel" placeholder="(41) 90000-0000" style="width: 100%; height: 48px; box-sizing: border-box; border: 1px solid #5A6660; border-radius: 10px; padding: 0 14px; font-family: 'Inter', sans-serif; font-size: 16px">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="servico" style="font-size: 15px; font-weight: 600">O que você precisa?</label>
-<select id="servico" name="servico" style="height: 48px; box-sizing: border-box; border: 1px solid #5A6660; border-radius: 10px; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 16px; background: #FFFFFF">
+<select id="servico" name="servico" style="width: 100%; height: 48px; box-sizing: border-box; border: 1px solid #5A6660; border-radius: 10px; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 16px; background: #FFFFFF">
 <option>Redes e Wi-Fi</option>
 <option>Câmeras IP</option>
 <option>Servidores</option>
@@ -317,10 +328,8 @@ a:hover{opacity:0.88}
 <div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #C9D3CD">
 <div style="font-weight: 600; color: #FFFFFF">Contato</div>
 <div>WhatsApp e telefone: <a href="https://wa.me/5541936186432?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20com%20a%20LigorioTec." target="_blank" rel="noopener" style="color: #14E07A">(41) 93618-6432</a></div>
-<div>E-mail: [E-MAIL]</div>
 <div>Curitiba e região</div>
 <div>Atendimento 24 horas</div>
-<div>Instagram, TikTok, Kwai e YouTube: @ligoriotec</div>
 </div>
 </div>
 <div style="border-top: 1px solid #2A332E; padding-top: 24px; font-size: 14px; color: #9AA7A0">© LigorioTec. Todos os direitos reservados.</div>
